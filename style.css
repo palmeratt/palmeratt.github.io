@@ -43,6 +43,9 @@ header{
     padding-top: .6%;
     color:black;
 }
+#sign_in:hover{
+    background-color: lightgray;
+}
 #join_now{
     border: 1px solid black;
     border-radius: 20px;
@@ -53,10 +56,16 @@ header{
     color:azure;
     background-color: black;
 }
+#join_now:hover{
+    background-color: #3b4040;
+}
 
 .header_left a{
     text-decoration: none;
     color: black;
+}
+.header_left a:hover{
+    color:#0f941a;
 }
 .header_right a{
     text-decoration: none;
@@ -76,7 +85,7 @@ header img{
     padding: 10px;
 }
 .first a:hover{
-    background-color: #267a2a;
+    background-color: #0a5422;
 }
 .first{
     background-color: #32462F;
@@ -105,14 +114,15 @@ header img{
 }
 .text-right{
     color:azure;
-    text-align: left;
     text-align: center;
     margin-bottom: 8.5%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     width: 50%;
+    box-sizing: border-box;
+
 }
 .text-right a{
     text-decoration: none;
@@ -121,31 +131,35 @@ header img{
     border: 1.3px solid azure;
     border-radius: 20px;
     padding: 10px 20px;
-    display: inline-block;
+    /* display: inline-block;
     padding: .6%;
-    margin-right: 35.5%;
+    margin-right: 35.5%; */ 
 }
 .text-right a:hover{
-    opacity: 14;
+    background-color: #034505;
 }
 .text-right h1{
     font-size: 50px;
 }
 .text-right p{
     font-size: 24px;
-    margin-right: 6.5%;
 }
 .img-right1{
+    width: 50%;
+    
+}
+.img-right1 img{
+    width: 100%;
+    height: 100%;
+}
+/* .img-right1{
     display: flex;
     flex-direction: row;
-    margin-left: 5%;
-}
+} */
 
 
 .img-left {
     width: 85%;
-    height: auto; 
-    min-height: 606.1px; 
     background-color: #006241;
     margin-left: 7.5%;
     margin-top: 2.5%;
@@ -164,9 +178,7 @@ header img{
 }
 
 .img-left1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    object-fit: fill; 
     display: block;
 }
 
@@ -206,6 +218,9 @@ header img{
     padding: 10px 20px;
     display: inline-block;
 }
+.text-left a:hover{
+    background-color: #034505;
+}
 
 
 .column{
@@ -226,6 +241,9 @@ header img{
     text-decoration: none;
     margin-left: 80px;
     color: #00000094;
+}
+.column a:hover{
+    color:#46484d;
 }
 .column :nth-child(3){
     padding-top: 18.5px;
