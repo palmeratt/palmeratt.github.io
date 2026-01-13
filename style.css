@@ -2,6 +2,7 @@
 
 *{
     font-size: 21px;
+    overflow-x: hidden;
 }
 
 body{
@@ -146,16 +147,11 @@ header img{
 }
 .img-right1{
     width: 50%;
-    
 }
 .img-right1 img{
     width: 100%;
     height: 100%;
 }
-/* .img-right1{
-    display: flex;
-    flex-direction: row;
-} */
 
 
 .img-left {
@@ -170,16 +166,12 @@ header img{
 }
 
 .img-left1 {
-    width: 50%; 
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;    
+    width: 50%;    
 }
 
 .img-left1 img {
-    object-fit: fill; 
-    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .text-left {
@@ -197,7 +189,6 @@ header img{
 .text-left h1 {
     font-size: 50px;
     margin-bottom: 20px;
-    width: 100%;
     text-align: center;
 }
 
@@ -253,4 +244,99 @@ footer{
     width: 100vw;
     box-shadow: 0 -.5px rgb(70, 70, 70);
     margin-top: 5%;
+}
+.rights{
+    color: #00000094;
+    font-size: 15px;
+}
+
+@media (orientation: portrait) and (max-width:430px) {
+    .first{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .first div  {
+        font-size: 18.5px;
+        margin: 0%;
+    }
+    .first a{
+        font-size: 18.5px;
+        margin: 0%;
+    }
+
+    .img-right{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+    .img-right1{
+        width: 100%;
+        height: 50%;
+    }
+    .text-right{
+        width: 100%;
+    }
+    .text-right h1{
+        font-size: 28px;
+    }
+    .text-right p{
+        font-size: 20px;
+    }
+    .img-right1 img{
+        margin-top: 0%;
+    }
+
+    .img-left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+    .img-left1{
+        width: 100%;
+        height: 50%;
+    }
+    .text-left{
+        width: 100%;
+    }
+    .text-left h1{
+        font-size: 28px;
+    }
+    .text-left p{
+        font-size: 20px;
+    }
+    .img-left1 img{
+        margin-top: 0%;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 0%;
+        }
+    .column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        }
+    footer:last-child{
+        margin-bottom: 7%;
+    }
+    .column h2{
+        margin-left: 5%;
+    }
+    .column a{
+        margin-left: 5%;
+    }
+    .rights{
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-bottom: 4%;
+    }
 }
