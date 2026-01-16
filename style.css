@@ -23,17 +23,19 @@ header{
 }
 .header_left{
     display: flex;
+    align-items: center;
     justify-content:start;
     padding-left: 3.9%;
     gap: 17px;
-    width: 40%;
+    width: 50%;
+    height: 100%;
 }
 .header_right{
     display: flex;
     justify-content: flex-end;
     padding-right: 10.4%;
     gap: 17px;
-    width: 40%;
+    width: 50%;
 }
 #sign_in{
     border: 1.5px solid rgb(66, 66, 66);
@@ -64,17 +66,18 @@ header{
 .header_left a{
     text-decoration: none;
     color: black;
+    display: flex;
+}
+.header_left img{
+    padding-left: 3%;
+    width: 10%;
+    height: 80%;
 }
 .header_left a:hover{
     color:#0f941a;
 }
 .header_right a{
     text-decoration: none;
-}
-header img{
-    height: 65%;
-    width: 3.2%;
-    padding-left: 3%;
 }
 
 .first a{
@@ -240,17 +243,52 @@ header img{
     padding-top: 18.5px;
 }
 footer{
-    display: flex;
     width: 100vw;
     box-shadow: 0 -.5px rgb(70, 70, 70);
     margin-top: 5%;
 }
+.footer2{
+    display: flex;
+}
 .rights{
     color: #00000094;
     font-size: 15px;
+    margin-left: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 @media (orientation: portrait) and (max-width:430px) {
+    .header_left{
+        gap: 2px;
+        margin: 0%;
+        font-size: 18px;
+        width: 65%;
+        padding: 0%;
+        gap: 12px;
+    }
+    .header_left img{
+        height: 50%;
+        width: 16%;
+        padding:0%;
+        margin: 0%;
+    }
+    .header_left a{
+        font-size: 18px;
+        gap: 6.7px;
+        margin: 0%;
+    }
+    .header_right{
+        gap: 10px;
+        font-size: 18px;
+        width: 35%;
+        padding: 0%;
+        margin-left: auto;
+    }
+    .header_right a{
+        font-size: 18px;
+        margin: 0%;
+    }
+
     .first{
         width: 100%;
         margin-left: 0%;
