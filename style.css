@@ -257,7 +257,7 @@ footer{
     margin-bottom: 1.5%;
 }
 
-@media (orientation: portrait) and (max-width:430px) {
+@media (orientation: portrait) and (max-width:450px) {
     .header_left{
         gap: 2px;
         margin: 0%;
