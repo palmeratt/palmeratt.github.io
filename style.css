@@ -119,14 +119,13 @@ header{
 .text-right{
     color:azure;
     text-align: center;
-    margin-bottom: 8.5%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 50%;
     box-sizing: border-box;
-
+    padding: 40px;
 }
 .text-right a{
     text-decoration: none;
@@ -135,9 +134,7 @@ header{
     border: 1.3px solid azure;
     border-radius: 20px;
     padding: 10px 20px;
-    /* display: inline-block;
-    padding: .6%;
-    margin-right: 35.5%; */ 
+    margin-top: 5%;
 }
 .text-right a:hover{
     background-color: #034505;
@@ -147,6 +144,7 @@ header{
 }
 .text-right p{
     font-size: 24px;
+    margin: 0;
 }
 .img-right1{
     width: 50%;
@@ -257,7 +255,7 @@ footer{
     margin-bottom: 1.5%;
 }
 
-@media (orientation: portrait) and (max-width:450px) {
+@media (orientation: portrait) and (max-width:500px) {
     .header_left{
         gap: 2px;
         margin: 0%;
@@ -265,6 +263,7 @@ footer{
         width: 65%;
         padding: 0%;
         gap: 12px;
+        overflow-x: visible;
     }
     .header_left img{
         height: 50%;
@@ -273,19 +272,19 @@ footer{
         margin: 0%;
     }
     .header_left a{
-        font-size: 18px;
+        font-size: 14px;
         gap: 6.7px;
         margin: 0%;
     }
     .header_right{
         gap: 10px;
-        font-size: 18px;
+        font-size: 16px;
         width: 35%;
         padding: 0%;
         margin-left: auto;
     }
     .header_right a{
-        font-size: 18px;
+        font-size: 14px;
         margin: 0%;
     }
 
@@ -294,11 +293,11 @@ footer{
         margin-left: 0%;
     }
     .first div  {
-        font-size: 18.5px;
+        font-size: 16px;
         margin: 0%;
     }
     .first a{
-        font-size: 18.5px;
+        font-size: 15px;
         margin: 0%;
     }
 
@@ -306,8 +305,10 @@ footer{
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
+        height: 50%;
         margin-left: 0%;
         margin-top: 5%;
+        padding: 0%;
     }
     .img-right1{
         width: 100%;
@@ -315,12 +316,20 @@ footer{
     }
     .text-right{
         width: 100%;
+        height: 50%;
+        padding: 14px 12px 14px 12px;
     }
     .text-right h1{
-        font-size: 28px;
+        font-size: 20px;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
     .text-right p{
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .text-right a{
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
     .img-right1 img{
         margin-top: 0%;
@@ -339,12 +348,17 @@ footer{
     }
     .text-left{
         width: 100%;
+        padding: 5px;
+        padding: 14px 12px 14px 12px;
     }
     .text-left h1{
-        font-size: 28px;
+        font-size: 20px;
+        margin: 5px 0px 5px 0px;
     }
     .text-left p{
-        font-size: 20px;
+        font-size: 16px;
+        padding: 0;
+        margin: 0%;
     }
     .img-left1 img{
         margin-top: 0%;
@@ -368,13 +382,20 @@ footer{
     }
     .column h2{
         margin-left: 5%;
+        font-size: 16px;
     }
     .column a{
         margin-left: 5%;
+        font-size: 16px;
     }
     .rights{
         margin-top: 5%;
         margin-left: 3%;
         margin-bottom: 4%;
+        font-size: 12.5px;
     }
+}
+
+@media (orientation: portrait) and (max-width:360px){
+
 }
