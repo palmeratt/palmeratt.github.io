@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-size: 19px;
+    overflow-x: hidden;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+header{
+    height: 100px;
+    box-shadow: 1px .5px 1px rgb(80, 80, 80);
+}
+header img{
+    width: 180px;
+    height: 100px;
+    margin-left: 40px;
+}
+
+h2{
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0 60px 0;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white; 
+    border-radius: 14px; 
+    box-shadow: 0 25px 40px -15px rgba(0,0,0,0.3);
+}
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 45px -15px rgba(0,0,0,0.4);
+}
+
+.suka{
+    display: flex;
+    flex-direction: column;
+    align-items: start!important;
+    width: 88%;
+}   
+
+#hz{
+    font-size: 16px;
+    margin: 30px 0 25px 0;
+}
+.usn{
+    border: 1.5px solid darkgray;
+    border-radius: 7px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    height: 50px;
+}
+.usn input{
+    border: none; 
+    outline: none; 
+    background-color: transparent;
+    padding: 10px;
+    height: 50px;
+    width: 80%;
+}
+
+.password{
+    border: 1.5px solid darkgray;
+    border-radius: 7px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    height: 50px;
+}
+.password input{
+    border: none; 
+    outline: none; 
+    background-color: transparent;
+    padding: 10px;
+    height: 50px;
+    width: 80%;
+}
+
+label input{
+  transform: scale(1.7); 
+  margin: 10px;
+  accent-color: #006241; 
+
+}
+label{
+    font-size: 16px;
+}
+#label a{
+    color: #006241; 
+    font-weight: 900;
+    font-size: 16px;
+}
+#label a:hover{
+    text-decoration: none;
+}
+#label{
+    padding-bottom: 27px;
+}
+
+.forgot{
+    display: flex;
+    flex-direction: column;
+}
+.forgot a:first-child{
+    padding-bottom: 20px;
+}
+.forgot a{
+    color: #006241; 
+    font-weight: 900;
+    font-size: 16px;
+}
+.forgot a:hover{
+    text-decoration: none;
+}
+
+button{
+    background-color: #00754A;
+    color: azure;
+    padding: 18px 24px;
+    border-radius: 36px;
+    border: none;
+    font-weight: 600;
+    box-shadow: .6px .6px 6px #0000003d;
+    margin-top: 55px;
+    margin-left: 325px;
+}
